@@ -1,0 +1,115 @@
+div {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 5% 5%;
+    margin: 0;
+}
+
+input {
+    background-color: #a89797;
+    width: 80%;
+    height: 43px;
+    padding: 10px 10px;
+    margin: 4px 0;
+    box-sizing: border-box;
+    border: 1px solid #c9c9c9;
+    border-radius: 4px;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid #797979;
+    border-radius: 4px;
+}
+
+input::placeholder {
+    color: #a1a1a1;
+}
+
+#ordinaryLogin {
+    background-color: #00aeff;
+    width: 80%;
+    height: 37px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 0px;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+
+
+#or {
+    text-align: center;
+    float: left;
+   
+    color: #999999;
+    font-size: 15px;
+    font-weight: 700;
+    margin:0px 15px;
+    width:20%
+
+}
+
+.spanWrap{
+    max-width: 250px;
+    margin: 5px auto;
+}
+
+.frdPicVid {
+    font-size: 16px;
+    color: #808080;
+}
+
+.loginWrap {
+    border: 1px solid #e6e6e6;
+    border-radius: 1px;
+    max-width: 400px;
+    padding: 40px 20px 20px 20px;;
+    margin: 10px auto;
+}
+
+#loginBelow {
+    font-size: 15px;
+    border: 1px solid #e6e6e6;
+    border-radius: 1px;
+    max-width: 400px;
+    padding: 20px;
+    margin: 10px auto;
+}
+
+.haveAccount {
+    margin: 0;
+}
+
+#signUpDescript {
+    font-size: 16px;
+    color: #808080;
+}
+
+#facebookLogin {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 80%;
+    height: 37px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 0px;
+    border-radius: 5px;
+    color: #00628f;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+#facebookLogo {
+    width:15px;
+}
+
+#signUp {
+    color: #479cc4;
+    font-weight: 900;
+}

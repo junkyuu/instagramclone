@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>westagram practice</title>
+    <link href="style/common.css" rel="stylesheet" type="text/css" />
+     <link href="style/login.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    
+    <div class="loginWrap">
+      <img src="img/logo_text.png" alt="Instagram" id="instaLogo">
+     
+      <!--
+      <div class="spanWrap">
+        <span class="frdPicVid">
+          친구들의 사진과 동영상을 보려면 가입하세요.
+        </span>
+      </div>
+      -->
+
+      <ul>
+        
+        <li>
+            <input type="text" placeholder="전화번호, 사용자 이름 또는 이메일">
+        </li>
+        <li>
+            <input type="text" placeholder="비밀번호">
+        </li>
+       <!-- 
+         <li>
+            <input type="text" placeholder="사용자 이름">
+        </li>
+        <li>
+            <input type="text" placeholder="비밀번호">
+        </li>
+      -->
+        <li>
+            <button id="ordinaryLogin">로그인</button>
+        </li>
+        <li class="lineAndOr">
+            <div id="or">
+                또는
+              </div>
+        </li>
+        <button id="facebookLogin">
+          <img src="img/facebook_logo.png" alt="facebook" id="facebookLogo">
+          Facebook으로 로그인
+        </button>
+        
+      </ul>
+
+    <!--
+     <div class="spanWrap">
+        <p id="signUpDescript">가입하면 Instagram의 약관, 데이터 정책 및 쿠키 정책에 동의하게 됩니다.</p>
+     </div>
+    -->
+   </div>
+
+    <div id="loginBelow">
+      <p class="haveAccount">계정이 없으신가요? <span id="signUp">가입하기</span></p>
+    </div>
+
+    <script src="js/login.js"></script>
+  </body>
+</html>

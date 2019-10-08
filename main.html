@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>westagram practice</title>
+    <link href="style/common.css" rel="stylesheet" type="text/css" />
+     <link href="style/main.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+
+    
+      <nav class="header fixedElement">
+       
+        <div class="leftIcon">
+            <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/logo.png" alt="instagramIcon" class="icon instagramIcon">
+            <div class="vertical blockToInline"></div>
+            <img src="img/logo_text.png" alt="instagramLogo" class="icon instagramLogo">
+        </div>
+       
+        <div class="searchBar">
+            <input type="text" placeholder="검색">
+        </div>
+        
+       
+        <div class="rightIcon">
+            <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png" alt="compassImg" class="icon">
+            <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png" alt="heartImg" class="icon">
+            <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png" alt="myPageImg" class="icon">
+        </div>
+      </nav>
+
+      <!--여기서부터 피드-->
+      <article class="feed blockToInline">
+        <div class="feedHead">
+          <!--
+            img
+            id
+            맨 오른쪽에 점 세개
+          -->
+
+          <img alt="sodam_park_0908님의 프로필 사진" class="profilePic floatLeft" src="https://scontent-gmp1-1.cdninstagram.com/vp/fb1437b3f3989a8261bb9476c1966e24/5E2C4616/t51.2885-19/s150x150/23101362_2375151346042390_8986311913952509952_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com">
+          <div class="profileId blockToInline floatLeft boldFont">sodam_park_0908</div>
+          <img class="floatRight threeDot farRight" alt="threeDot" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAhFBMVEX///8AAADKysrY2NjQ0ND5+fnm5ubV1dX29vZDQ0PHx8fDw8MJCQl/f3+mpqaioqLs7Oytra0YGBiLi4t1dXVTU1NLS0vf3989PT2Tk5Po6OgbGxttbW29vb0zMzMQEBBkZGRZWVkjIyOampp6eno3Nzdvb28qKiqDg4MiIiKzs7NNTU1UTeJUAAAEaElEQVR4nO3b13bqMBBAUUwJYEilhBQCTkj///+72IRQbGkK5LZ19rtmWbYsj6RxrQYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIB/ykW7Wa83G63jRu00iqidI4ZsFSHbF6bLmC66yVp/NGge50p6p+PvqMnnoH6EmM3BqP8dsruY6u7cdJSUnF4fei3pvBx12D4oZGNRDpn1xGZns3Kz3PigB/nxWB11krpD1rvVIWeX0WbT6laF0Yn3YtJA/4o+Nlwhr8fhkLNpsFkri3Rw6dzXwWE86o0j5FM85DzQLI03Wxo75sCGGPXZNA0udSZizMp36lxstmQeqbFx/802Uq81IT/K7QaadklinFTPdFEtX46mLmTplbrRtTM+xUttVP13Qx71X86cl5Ikhnexp4+qvXG3+pA7U2pb3y55VnfwxBD1ThnzzhBz641qGZotExxtD18tUeeqkC+WkK+bdvemHlZPxWVvtqjh7/SGYdjnBut2ljGae1B10DJGczNFzL4cZsf67X42tkviqd+XzBpVTm7UE/7aaNXO+OiXrhQdVM/qG9Ja1DZdFFa5RCBJj1G8MxWrJYmU96qyrl33eTtVErRnLHaw44j6KMS8csTMv97KdG2XmCw77reUn1onxEI+ZUQWb2Fn0WupuYb+1uxeyfUoxqY0aEsmdNAzSKXP0IMrZku3vCkTeiivNSvFBr/vpi3TE9ezT5LbeA/NX6715YTVfSEvPbN6TtjTMuaBm8sJUy41973Z0mPdtdQcadJKbKoxprlr85qvnZRiWRPILy+RkMKGVsjE20NhCeWMOo+EdA78d++1DH/kGcZyJeczTLzXIvQwsHMuGR2/h/3au6+hMEqd89c8EvLUF/Ldl16JM03F6Y5GbGQ4P7Fj78MX1k/OGx5bP334Qi6kI4AQYZva+XmO3TfX0iJJnhwr/IKwHlduTO+L5YLOvDStXbjaiUtgV9T4pqlvxug4FyVPUg9dU80iGtI11Uxq4llcNXET3nBMsBE/oPFstxRzl2eYyjv7nrdG2jH1fGSLFadjQFWczu1zpJHShqljgl7tRdiXln25g54xJZ5q2UN+LanlQ+M94j5ULrNGje9D5cxTxnrKt25Pa7a8He+3ovzKmtB/n69VlN7EKM+kjbO74t22bnBtjQrTEir+1dpi+tJK+5Mrpix6ew/dkvPpztZylvO1mbJE0LLY26mqMHygDdUvf9E5vuGlMZWbqG+cvmpOPdxKE/5/X0+jOy3qm2uiVOvW31MTpZmKPx11bfKo+om6tkAFUieLN1OlMmVChuqpTRRmjftwy9iY8teX9iJlPl1f9XEjshy+ip+phN7Gz4NqhC8DfZz4i73TwFC9kwtFquq83w6u8+5l5ahDX33wWqMiwcl0ZdWdj+HmBs2ymyPV6m//AZCMjlKr337aehzdQWr6d+KimaZp/dj/W/zAXxwdx/8WAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA+PN+AQi9Oys94KNvAAAAAElFTkSuQmCC">
+
+        </div>
+          
+          <img src="https://scontent-nrt1-1.cdninstagram.com/vp/1d2c832422b58f7dd84d7a510e81827b/5E3D0871/t51.2885-15/e35/p1080x1080/71533407_489096444980031_6895296298855050282_n.jpg?_nc_ht=scontent-nrt1-1.cdninstagram.com&_nc_cat=1" class="feedPic" alt="sodam_park_0908님의 피드">
+          
+
+          <div class="feedIconBar">
+            <!--
+              하트
+              댓글
+              자료
+              맨 오른쪽에 스크랩
+            -->
+
+            <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png" class="icon floatLeft" alt="heart">
+            <img src="https://cdn3.iconfinder.com/data/icons/basic-user-interface-application/32/INSTAGRAM_ICON_SETS-06-512.png" class="icon floatLeft" alt="comments">
+            <img src="https://cdn3.iconfinder.com/data/icons/basic-user-interface-application/32/INSTAGRAM_ICON_SETS-21-512.png" class="icon floatLeft" alt="share">
+            <img src="https://cdn3.iconfinder.com/data/icons/basic-user-interface-application/32/INSTAGRAM_ICON_SETS-07-512.png" class="icon floatRight farRight" alt="save">
+
+          </div>
+
+          <div class="whoLikeThis">
+              <img alt="geun_95_님의 프로필 사진" class="profilePic floatLeft" src="https://scontent-gmp1-1.cdninstagram.com/vp/6d3354d56db7aca8926be83cc26c7803/5E36BFB8/t51.2885-19/s150x150/65450009_2410650699222462_8965979083506712576_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com">
+              <div class="spanInwhoLikeThis floatLeft">
+                <span class="boldFont">geun_95_</span>님 <span class="boldFont">외 30,003명</span>이 좋아합니다</div>
+                
+          </div>
+
+      
+          <div class="contentsOfFeed">
+            <!--피드의 글 내용-->
+            <span class="boldFont">
+              sodam_park_0908
+            </span>
+            
+            <a href="https://www.instagram.com/explore/tags/newyorkfilmfestival/" class="hashtag">
+              #newyorkfilmfestival
+            </a>
+            
+            <span class="inlineToBlock greyFont">
+              댓글 179개 모두 보기
+            </span>
+          </div>
+          
+          <div class="commentsSomeoneWrote">
+            <!--댓글들-->
+         
+            <div class="instaComment inlineToBlock">
+              <span class="boldFont">nicholaus_kwon</span> 🌻
+              <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png" class="floatRight commentheart" alt="commentheart">
+            </div>
+              
+            <div class="instaComment inlineToBlock">
+              <span class="boldFont">nurrhalimah22</span> parasite👍
+              <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png" class="floatRight commentheart" alt="commentheart">
+            </div>
+            
+            
+            <div class="whenPost inlineToBlock greyFont whenPostThisComment">
+              15시간 전
+            </div>
+            
+
+
+
+            
+            <!--
+            //아래 내용 추가할 것
+            <div class="instaComment inlineToBlock">
+                <span class="boldFont">zunky_c </span>
+                //commentInput.value
+                <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png" class="floatRight commentheart" alt="commentheart">
+              </div>
+              
+              <div class="whenPost inlineToBlock greyFont whenPostThisComment">
+                방금
+              </div>
+              //여기까지
+            -->
+          </div>
+          
+          <div class="comments">
+            <!--댓글달기 맨 오른쪽엔 게시 버튼-->
+            <input type="text" class="floatLeft" id="commentInput" placeholder="댓글 달기...">
+            <button class="floatRight postButton unactivatedPostButton">게시</button>
+          </div>
+        
+        </article>
+
+        <div class="mainRight floatRight  fixedElement blockToInline">
+          
+          <div class="myProfile blockToInline">
+          <!--내 스토리-->
+
+          <table>
+            <tr>
+              <td rowspan="2">
+                  <img alt="zunky_c님의 프로필 사진" class="profilePic" src="https://scontent-gmp1-1.cdninstagram.com/vp/bacf1daa53cf4ed1c82c4cd51d9a0cdc/5E372351/t51.2885-19/s150x150/41756488_340474816522894_5618674459985575936_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com">
+              </td>
+              <td class="boldFont">zunky_c</td>
+            </tr>
+            <tr>
+              <td class="greyFont belowName">Junkyu Park</td>
+            </tr>
+          </table>
+
+          </div>
+
+          <div class="storyWindow">
+            <!--다른 사람들 스토리-->
+            
+              <div class="blockToInline floatLeft greyFont">스토리</div>
+              <button class="floatRight">모두 보기</button>
+            
+
+            <div class="stories">
+                <table>
+                    <tr>
+                      <td rowspan="2">
+                          <img alt="kang_drone님의 프로필 사진" class="profilePic" src="https://scontent-gmp1-1.cdninstagram.com/vp/324d530518025061f71b29459fda973b/5E3C414F/t51.2885-19/s150x150/39687759_615089018887320_6987797226634346496_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com">
+                         </td>
+                      <td class="boldFont">kang_drone</td>
+                    </tr>
+                    <tr>
+                      <td class="greyFont belowName">2시간 전</td>
+                    </tr>
+                  </table>
+
+                  <table>
+                      <tr>
+                        <td rowspan="2">
+                            <img alt="yeon_onysos님의 프로필 사진" class="profilePic" src="https://scontent-gmp1-1.cdninstagram.com/vp/3a3554a385e1604b0030d9a785046d11/5E2D4CBC/t51.2885-19/s150x150/70968412_616724502189137_5682548500647116800_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com">
+                        </td>
+                        <td class="boldFont">yeon_onysos</td>
+                      </tr>
+                      <tr>
+                        <td class="greyFont belowName">5시간 전</td>
+                      </tr>
+                    </table>
+
+                    <table>
+                        <tr>
+                          <td rowspan="2">
+                              <img alt="cococapitan님의 프로필 사진" class="profilePic" src="https://scontent-gmp1-1.cdninstagram.com/vp/0da307154924bbd82bfa36340aba5d4b/5E38811D/t51.2885-19/10919135_1399995603628515_1676842952_a.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com">
+                          </td>
+                          <td class="boldFont">cococapitan</td>
+                        </tr>
+                        <tr>
+                          <td class="greyFont belowName">18분 전</td>
+                        </tr>
+                      </table>
+
+            </div>
+          </div>
+          <div class="recommendations">
+            <!--회원님을 위한 추천-->
+            <div class="blockToInline floatLeft greyFont">회원님을 위한 추천</div>
+              <button class="floatRight">모두 보기</button>
+            
+
+            <div class="stories">
+                <table>
+                    <tr>
+                      <td rowspan="2">
+                          <img alt="jangsk83님의 프로필 사진" class="profilePic" src="https://scontent-gmp1-1.cdninstagram.com/vp/31e6553e63e25333372115378d27dc1f/5E19BE85/t51.2885-19/s150x150/70267306_514675442431775_7135785208195842048_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com">  
+                      </td>
+                      <td class="boldFont">jangsk83</td>
+                      <td rowspan="2" class="followButton">
+                      <button>팔로우</button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="greyFont belowName">2nsootagram님 외 15명이 팔..</td>
+                    </tr>
+                  </table>
+
+                  <table>
+                      <tr>
+                        <td rowspan="2">
+                            <img alt="foodyinkorea님의 프로필 사진" class="profilePic" src="https://scontent-gmp1-1.cdninstagram.com/vp/be2c4e075d8d4f46f998f6561ae5efd4/5E29CDEB/t51.2885-19/s150x150/69952074_988530178145361_7123367263742197760_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com">   </td>
+                        <td class="boldFont">foodyinkorea</td>
+                        <td rowspan="2" class="followButton">
+                            <button>팔로우</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="greyFont belowName">yeon_onysos님 외 10명이 팔..</td>
+                      </tr>
+                    </table>
+
+                    <table>
+                        <tr>
+                          <td rowspan="2">
+                              <img alt="ben__s2님의 프로필 사진" class="profilePic" src="https://scontent-gmp1-1.cdninstagram.com/vp/f68030682a30b3804824bf16a5ca8c09/5E3CD8F5/t51.2885-19/s150x150/54511964_1036894129847623_440126176657145856_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com">   </td>
+                          <td class="boldFont">ben__s2</td>
+                          <td rowspan="2" class="followButton">
+                              <button>팔로우</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="greyFont belowName">ho._.j._.c님이 팔로우합니다</td>
+                        </tr>
+                      </table>
+
+            </div>
+          </div>
+
+        </div>
+   
+    
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

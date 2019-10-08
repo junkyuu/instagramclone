@@ -1,0 +1,307 @@
+body {
+    background-color: #fafafa;
+}
+
+*{
+    font-family: Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #174a87;
+}
+
+.fixedElement{
+    position: fixed;
+}
+
+.floatLeft{
+    float: left;
+}
+.floatRight {
+    float: right;
+}
+
+.greyFont{
+    color: #b2b2b2;
+}
+
+.belowName{
+    font-size: 13px;
+}
+
+.blockToInline {
+    display:inline-block;
+}
+
+.inlineToBlock {
+    display: block;
+}
+
+.header {
+    top:0;
+    left: 0;
+    padding:30px 30px;
+    width: 100%;
+    background-color: #FFFFFF;
+    display: flex;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+    z-index: 1;
+}
+
+.header .leftIcon{
+    flex: 1;
+    width: 200px;
+}
+
+.header .leftIcon .vertical{
+    width: 1px;
+    height: 27px;
+    margin: 0px 5px;
+    background-color: black;
+}
+
+.header .searchBar{
+    flex: 1;
+}
+
+.header .searchBar input{
+    text-align: center;
+    border: 1px solid #e0e0e0;
+    background-color: #f1f1f1;
+    border-radius: 3px;
+    width: 75%;
+    height: 22px;
+}
+
+.header .rightIcon{
+    flex: 1;
+    width: 200px;
+}
+
+.header .rightIcon * {
+    margin-left: 15px;
+    opacity: 0.7;
+}
+
+.icon {
+    
+    height: 25px;
+}
+
+#instagramLogo {
+    height: 27px;
+}
+
+.profilePic {
+    border: 0.1px solid white;
+    border-radius: 16px;
+    width: 32px;
+}
+
+.profileId {
+    padding: 9px 0px 9.5px 10px;
+    font-size: 15px;
+}
+
+.feed{
+    width: 500px;
+    border: 0.6px solid #e0e0e0;
+    margin-top: 100px;
+    margin-left: 20%;
+    margin-bottom: 0px;
+}
+
+.feedHead{
+   padding-top:5px;
+   padding-left: 5px;
+    width:500px;
+}
+.threeDot {
+    padding: 9px 10px 9.5px 0px;
+    height: 20px;
+    float:right;
+    opacity: 0.3;
+}
+
+.feedPic {
+    width:500px;
+}
+
+.feedIconBar {
+    height: 30px;
+}
+
+.feedIconBar * {
+    margin-top:5px;
+    margin-left: 13px;
+}
+
+.farRight {
+    margin-right: 13px;
+}
+
+.whoLikeThis {
+    margin-top: 7px;
+    margin-left: 13px;
+    height: 30px;
+}
+
+.whoLikeThis .profilePic{
+    border: 0.1px solid white;
+    border-radius: 16px;
+    width: 20px;
+}
+
+.spanInwhoLikeThis {
+    font-size: 15px;
+    margin-left: 5px;
+    font-weight: 100;
+}
+
+.contentsOfFeed {
+    margin-left: 13px;
+    font-size: 15px;
+}
+
+.contentsOfFeed .greyFont{
+    margin-top: 5px;
+    margin-bottom: 7px;
+}
+
+.boldFont{
+    font-weight: 600;
+}
+
+.hashtag {
+    margin-left: 3px;
+    color: #174a87;
+}
+
+.commentsSomeoneWrote {
+    font-size: 15px;
+    margin-left:13px;
+}
+
+.commentheart {
+    width: 11px;
+    margin-right: 5px;
+}
+
+.whenPost {
+    margin-top:5px;
+    margin-bottom: 7px;
+    font-size: 11px;
+}
+
+.comments {
+    border-top: 0.6px solid #e0e0e0;
+
+    height: 50px;
+}
+
+.comments input{
+    margin-top: 12.5px;
+    margin-left: 13px;
+    width: 300px;
+    height: 25px;
+    font-size: 13px;
+    border:none;
+    background-color: #fafafa;
+}
+
+.comments input:focus {
+    outline: none;
+}
+
+.comments button {
+    margin-top: 18px;
+    margin-right: 13px;
+    font-size: 13px;
+    border: none;
+    background-color: #Fafafa;
+}
+
+.comments button:focus{
+    outline: none;
+}
+
+.unactivatedPostButton {
+    color: #CADAFA;
+}
+
+.ActivatedPostButton {
+    color: #0283ed;
+}
+
+.mainRight {
+    margin-top: 120px;
+    margin-left: 40px;
+    
+}
+
+.myProfile {
+    width: 250px;
+   
+}
+
+.mainRight .profilePic{
+    width: 40px;
+    border-radius: 20px;
+}
+
+.storyWindow {
+    margin-top: 10px;
+    height: 170px;
+    padding: 5px;
+    border: 1px solid #e0e0e0;
+    border-radius: 3px;
+    background-color: #FFFFFF;
+}
+
+.storyWindow .blockToInline{
+    margin-left: 5px;
+    font-size: 13px;
+}
+
+
+.storyWindow button{
+    border: none;
+    background-color: #FFFFFF;
+    font-size: 12px;
+}
+
+.stories {
+    margin-top: 20px;
+}
+
+.recommendations {
+    margin-top: 10px;
+    height: 170px;
+    padding: 5px;
+    border: 1px solid #e0e0e0;
+    border-radius: 3px;
+    background-color: #FFFFFF;
+}
+
+.recommendations .blockToInline{
+    margin-left: 5px;
+    font-size: 13px;
+}
+
+
+.recommendations button{
+    border: none;
+    background-color: #FFFFFF;
+    font-size: 12px;
+}
+
+.recommendations .stories .followButton button{
+    color: #0283ed;
+}
+
+.recommendations .stories .belowName{
+    width: 177px;
+}
